@@ -1,0 +1,25 @@
+# DB Archiver configuration
+# Keep this file private: chmod 600 config.ini
+
+[settings]
+# Delete backups older than this many days
+retention_days = 30
+# Optional. Default: <app folder>/backups
+# backup_dir = /home/username/db-archiver/backups
+
+# One section per connection (each can use a different user).
+# 'databases' is a comma-separated list.
+
+[shop]
+host = 127.0.0.1
+port = 3306
+user = backup_shop
+password = change_me
+databases = shop_db, shop_logs
+
+[web]
+host = 127.0.0.1
+port = 3306
+user = backup_web
+password = change_me
+databases = web_db

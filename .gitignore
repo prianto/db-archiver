@@ -1,0 +1,20 @@
+# Backups (may contain sensitive data)
+backups/
+
+# Logs
+*.log
+
+# Config with real credentials (keep config.example.ini if you add one)
+config.ini
+
+# Partial / temporary files
+*.part
+*.part.err
+*.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
